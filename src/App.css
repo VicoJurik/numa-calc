@@ -1,33 +1,83 @@
-.App {
-  text-align: center;
+.calculator {
+  background-color: black;
+  border: 2px solid #333;
+  font: 24px Arial;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 12px;
+  width: 270px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.calculator div {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.calculator button {
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator .buttons {
+  margin-top: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator .labelButton {
+  background: #555;
+  cursor: pointer;
+  font: 24px Arial;
+  height: 56px;
+  margin: 4px;
+  width: 56px;
+}
+
+.calculator .labelButton:hover {
+  background: #577;
+}
+
+.calculator .digitButton {
+  background: #a80;
+}
+
+.calculator .digitButton:hover {
+  background: #f80;
+}
+
+.calculator .zeroButton {
+  background: #a20;
+  width: 120px;
+}
+
+.calculator .zeroButton:hover {
+  background: #f20;
+}
+
+.calculator .evalButton {
+  background: #008080;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font: bold 24px Arial;
+  height: 56px;
+  margin-left: 8px;
+  width: 78px;
+}
+
+.calculator .evalButton:hover {
+  background: #00a0a0;
+}
+
+.calculator .expressionInput {
+  font: 24px Arial;
+  height: 56px;
+  padding: 0px;
+  width: 140px;
+}
+
+.calculator .result {
+  border: 2px solid orangered;
+  color: red;
+  margin-top: 12px;
+  padding: 6px;
+  text-align: right;
 }
